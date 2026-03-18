@@ -1,0 +1,239 @@
+/* ── Shared utilities ── */
+.section-inner {
+  max-width: var(--container-inner);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.section-dots {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0 18px;
+}
+
+.section-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  opacity: 0.45;
+}
+
+.section-dots span:first-child {
+  opacity: 1;
+}
+
+/* ── Vision + Mission ── */
+.section-vision-mission {
+  position: relative;
+  overflow: hidden;
+  padding: var(--section-gap-lg) 0;
+  background: var(--color-bg-vm) url('../assets/images/bg-logo.png') no-repeat center / 110% auto;
+}
+
+.section-vision-mission .section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.vision-grid,
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Shared text styles */
+.vision-text h2,
+.mission-text h2 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.15;
+}
+
+.vision-text p,
+.mission-text p {
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  color: var(--color-dark);
+  line-height: 1.75;
+  max-width: 380px;
+}
+
+/* ── Play button ── */
+.mission-image {
+  position: relative;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255 255 255 / 0.92);
+  box-shadow: 0 2px 12px rgba(0 0 0 / 0.15);
+  transition: scale var(--transition), background var(--transition);
+}
+
+.play-btn:hover {
+  scale: 1.1;
+  background: var(--color-white);
+}
+
+.play-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--color-accent);
+  margin-left: 4px;
+}
+
+/* ── Main Activities ── */
+.section-activities {
+  background: var(--color-bg-activities);
+  padding: var(--section-gap-lg) 0;
+}
+
+.activities-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.activities-header h2 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.activities-header .section-dots {
+  justify-content: center;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.activity-card-image {
+  width: 180px;
+  height: 160px;
+  object-fit: contain;
+  object-position: center bottom;
+  transition: transform var(--transition);
+}
+
+.activity-card:hover .activity-card-image {
+  transform: scale(1.05);
+}
+
+.activity-card h3 {
+  font-family: var(--font-primary);
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.activity-card-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--color-dark);
+  opacity: 0.25;
+}
+
+.activity-card p {
+  font-family: var(--font-primary);
+  font-size: var(--fs-small);
+  color: var(--color-dark);
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+
+  .vision-grid,
+  .mission-grid {
+    gap: 40px;
+  }
+
+  .vision-text h2,
+  .mission-text h2,
+  .activities-header h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .vision-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Restore natural document order for mission on mobile */
+  .mission-image {
+    order: -1;
+  }
+
+  .vision-text p,
+  .mission-text p {
+    max-width: 100%;
+  }
+
+  .section-vision-mission {
+    padding: 60px 0;
+  }
+
+  .section-vision-mission .section-inner {
+    gap: 60px;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-activities {
+    padding: 60px 0;
+  }
+
+  .vision-text h2,
+  .mission-text h2,
+  .activities-header h2 {
+    font-size: 28px;
+  }
+
+  .section-inner {
+    padding: 0 20px;
+  }
+
+  .section-vision-mission .section-inner {
+    gap: 48px;
+  }
+
+  .activities-grid {
+    gap: 48px;
+  }
+}

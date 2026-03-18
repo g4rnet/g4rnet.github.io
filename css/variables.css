@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../assets/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --color-accent: #57984c;
+  --color-dark: #324950;
+  --color-footer-top: #2d3f45;
+  --color-footer-bottom: #324950;
+  --color-bg-activities: #ededed;
+  --color-bg-vm: #f5f5f5;
+  --color-white: #ffffff;
+
+  /* Typography — single font family used project-wide */
+  --font-primary: 'Roboto Slab', serif;
+
+  /* Font sizes */
+  --fs-hero: 64px;
+  --fs-h2: 48px;
+  --fs-h3: 24px;
+  --fs-large: 20px;
+  --fs-medium: 18px;
+  --fs-base: 16px;
+  --fs-small: 14px;
+
+  /* Layout */
+  --container-inner: 1200px;
+  --container-pad: 40px;
+
+  /* Spacing */
+  --section-gap-lg: 100px;
+
+  /* Component heights */
+  --hero-height: 850px;
+  --icon-strip-height: 190px;
+  --footer-top-height: 76px;
+  --footer-bottom-height: 51px;
+
+  /* Transitions */
+  --transition: 0.25s ease;
+}
