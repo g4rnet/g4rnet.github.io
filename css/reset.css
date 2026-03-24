@@ -7,34 +7,34 @@ Based on: Josh Comeau's CSS Reset + extras
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 2. Remove default margin & padding */
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* 3. Root & html */
 html {
-	font-size: 16px;
-	scroll-behavior: smooth;
-	-webkit-text-size-adjust: 100%;
-	/* prevent font scaling on mobile orientation change */
-	tab-size: 4;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* prevent font scaling on mobile orientation change */
+  tab-size: 4;
 }
 
 /* 4. Body defaults */
 body {
-	min-height: 100vh;
-	min-width: 320px;
-	overflow-x: hidden;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	/* smoother fonts on macOS/iOS */
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  min-width: 320px;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* smoother fonts on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* 5. Images & media */
@@ -43,9 +43,9 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 6. Remove built-in form typography */
@@ -53,46 +53,46 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
-	color: inherit;
-	background: transparent;
-	border: none;
-	outline: none;
-	appearance: none;
-	-webkit-appearance: none;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 /* 7. Links */
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* 8. Lists */
 ul,
 ol {
-	list-style: none;
+  list-style: none;
 }
 
 /* 9. Buttons */
 button {
-	cursor: pointer;
-	border: none;
-	background: none;
-	padding: 0;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 10. Tables */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* 11. Headings — remove default bold weight (controlled by CSS) */
@@ -102,43 +102,42 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: inherit;
-	line-height: 1.2;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.2;
 }
 
 /* 12. Paragraphs */
 p {
-	overflow-wrap: break-word;
-	hyphens: auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* 13. HR */
 hr {
-	border: none;
-	border-top: 1px solid currentColor;
-	opacity: 0.2;
+  border: none;
+  border-top: 1px solid currentColor;
+  opacity: 0.2;
 }
 
 /* 14. Fieldset */
 fieldset {
-	border: none;
+  border: none;
 }
 
 /* 15. Address */
 address {
-	font-style: normal;
+  font-style: normal;
 }
 
 /* 16. Remove animations for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
-	*,
-	*::before,
-	*::after {
-		animation-duration: 0.01ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
-	}
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

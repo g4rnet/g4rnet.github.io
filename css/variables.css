@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Roboto Slab';
-  src: url('../assets/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Slab";
+  src: url("../assets/fonts/RobotoSlab-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -17,7 +18,7 @@
   --color-white: #ffffff;
 
   /* Typography — single font family used project-wide */
-  --font-primary: 'Roboto Slab', serif;
+  --font-primary: "Roboto Slab", serif;
 
   /* Font sizes */
   --fs-hero: 64px;

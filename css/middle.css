@@ -28,7 +28,8 @@
   position: relative;
   overflow: hidden;
   padding: var(--section-gap-lg) 0;
-  background: var(--color-bg-vm) url('../assets/images/bg-logo.png') no-repeat center / 110% auto;
+  background: var(--color-bg-vm) url("../assets/images/bg-logo.png") no-repeat
+    center / 110% auto;
 }
 
 .section-vision-mission .section-inner {
@@ -81,7 +82,9 @@
   border-radius: 50%;
   background: rgba(255 255 255 / 0.92);
   box-shadow: 0 2px 12px rgba(0 0 0 / 0.15);
-  transition: scale var(--transition), background var(--transition);
+  transition:
+    scale var(--transition),
+    background var(--transition);
 }
 
 .play-btn:hover {
@@ -168,7 +171,6 @@
 
 /* ── Responsive ── */
 @media (max-width: 1200px) {
-
   .vision-grid,
   .mission-grid {
     gap: 40px;
@@ -182,7 +184,6 @@
 }
 
 @media (max-width: 900px) {
-
   .vision-grid,
   .mission-grid {
     grid-template-columns: 1fr;

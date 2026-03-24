@@ -8,33 +8,34 @@
 📁 PRACTICE/
 │
 ├── index.html               ← Головна сторінка
-├── README.md
+├── README.md                ← Документація проєкту
+│
+├── 📁 pages/                ← Внутрішні сторінки
+│   ├── tomato_all.html      ← Сторінка гібридів томатів
+│   └── not_ready.html       ← Заглушка (Under Development)
+│
+├── 📁 css/
+│   ├── reset.css            ← Скидання стилів браузера
+│   ├── variables.css        ← CSS змінні та @font-face
+│   ├── header.css           ← Стилі шапки (у т.ч. білий варіант)
+│   ├── middle.css           ← Спільні секції (Vision/Mission)
+│   ├── footer.css           ← Стилі підвалу
+│   └── tomato_all.css       ← Специфічні стилі для сторінки томатів
 │
 └── 📁 assets/
-    ├── 📁 fonts/
-    │   └── RobotoSlab-VariableFont_wght.ttf
+    ├── 📁 fonts/            ← Локальні шрифти (Roboto Slab)
     └── 📁 images/
-        ├── 📁 icons/        ← Іконки категорій (wheat, tomato…)
+        ├── 📁 icons/        ← SVG та растрові іконки
+        ├── 📁 tomatoes/     ← Фотографії товарів (гібриди томатів)
         ├── bg-logo.png
         ├── hero-bg.jpg
-        ├── logo.png
-        ├── mission-photo.png
-        ├── vision-photo.png
-        ├── cotton.png
-        ├── sunflower.png
-        └── tomato.png
-
-└── 📁 css/
-    ├── reset.css            ← Нормалізація браузерів
-    ├── variables.css        ← CSS Custom Properties + @font-face
-    ├── header.css           ← Шапка, хіро, іконки
-    ├── middle.css           ← Vision / Mission / Activities
-    └── footer.css           ← Двострічковий футер
+        └── ... (інші медіафайли)
 ```
-
 
 ## Що реалізовано
 
+- Використання article для карток товарів, blockquote для цитат.
+- Реалізовано альтернативний варіант шапки з білим фоном та темним текстом для кращої читабельності на внутрішніх сторінках.
 - Семантична HTML5-розмітка (`header`, `main`, `footer`, `section`, `article`, `nav`)
 - CSS Custom Properties для кольорів, шрифтів та відступів
 - Адаптивний дизайн (breakpoints: 1200 / 900 / 768 / 600 / 480px)
